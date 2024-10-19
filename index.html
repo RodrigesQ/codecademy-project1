@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StellarTech Solutions</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="content">
+        <h1 class="logo">StellarTech Solutions</h1>
+        <button class="hamburger" id="hamburger-button">&#9776;</button> <!-- Hamburger button -->
+        <nav id="navbar">
+          <ul>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Mission Statement -->
+      <section id="mission">
+        <div class="content">
+          <h2>Our Mission</h2>
+          <h4>
+            At StellarTech Solutions, we empower businesses to thrive in a digital world. 
+            Our mission is to provide cutting-edge technology products that simplify processes, 
+            boost productivity, and unlock new growth opportunities for enterprises.
+          </h4>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <div class="content">
+          <h2>Our Products</h2>
+          <ul>
+            <li>
+              <img src="./img/QuantumCloud2.jpg" alt="">
+              <h4>QuantumCloud</h4>
+              <p>A secure, scalable cloud storage solution for businesses of all sizes.</p>
+            </li>
+            <li>
+              <img src="./img/AI-Powered Analytics1.jpg" alt="">
+              <h4>AI-Powered Analytics</h4>
+              <p>AI-driven insights to help you make better decisions with real-time data analysis.</p>
+            </li>
+            <li>
+              <img src="./img/AutomatedWorkflow2.jpg" alt="">
+              <h4>Automated Workflow</h4>
+              <p>Automation tools designed to streamline business operations and enhance productivity.</p>
+            </li>
+            <li>
+              <img src="./img/DataGuard1.jpg" alt="">
+              <h4>DataGuard</h4>
+              <p>A robust security solution designed to protect your data and ensure compliance.</p>
+            </li>
+            <li>
+              <img src="./img/TeamSync2.jpg" alt="">
+              <h4>TeamSync</h4>
+              <p>Collaboration tools designed to enhance teamwork and communication across your organization.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section id="team">
+        <div class="content">
+          <h2>Meet Our Team</h2>
+          <ul>
+            <li>
+              <img src="./img/image_uHJZ-o_Q_1728829114546_raw.w.jpg" alt="">
+              <h4>Emma Lindström</h4>
+              <p>CEO & Founder - With 15 years in tech, Emma leads with innovation and inclusivity.</p>
+            </li>
+            <li>
+              <img src="./img/image_Ck0ISHKq_1728829250406_raw.jpg" alt="">
+              <h4>Aiden Chen</h4>
+              <p>CTO - A specialist in AI and cloud computing, Aiden drives our tech development.</p>
+            </li>
+            <li>
+              <img src="./img/image_ELI9-Jd3_1728829208793_raw.jpg" alt="">
+              <h4>Sara Novak</h4>
+              <p>Head of Marketing - Expert in branding, Sara ensures our message reaches the world.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="contacts">
+        <p>Email: contact@stellartech.com | Phone: (123) 456-7890</p>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 StellarTech Solutions. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const hamburgerButton = document.getElementById('hamburger-button');
+      const navbar = document.getElementById('navbar');
+
+      hamburgerButton.addEventListener('click', () => {
+        navbar.classList.toggle('active'); // Toggle the 'active' class
+      });
+    </script>
+
+  </body>
+
+
+
+</html>

@@ -1,0 +1,345 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    top: 0;
+    left: 0;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: white;
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.875rem;
+    width: 100%;
+    height: 100%;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+nav a:hover{
+    color: #3a5fdb;
+}
+
+.hamburger {
+    display: none; /* Initially hidden */
+    font-size: 2rem; /* Size of the hamburger icon */
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+
+  /* Styles for the navbar */
+  nav {
+    display: flex; /* Show the nav items */
+  }
+
+/* Main styles */
+main {
+    margin-top: 80px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+      display: block; /* Show hamburger button on smaller screens */
+    }
+
+    nav {
+      display: none; /* Hide the nav items by default */
+      flex-direction: column; /* Stack items vertically */
+      position: absolute; /* Position relative to the header */
+      top: 80px; /* Align with header */
+      left: 0; /* Align left */
+      width: 100%; /* Full width */
+      background-color: white; /* Background for the dropdown */
+      z-index: 99; /* Ensure it appears above other content */
+      padding-left: 15px;
+      opacity: 75%;
+    }
+
+    nav.active {
+      display: flex; /* Show nav items when active */
+    }
+
+    header nav ul {
+      flex-direction: column; /* Stack items vertically */
+      width: 100%; /* Full width for items */
+    }
+
+    header nav ul li {
+      margin: 1rem 0; /* Add vertical spacing */
+    }
+    header nav ul li a{
+        color: #333;
+        font-weight: bold;
+      }
+  }
+
+/* Mission section styles */
+main #mission {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 700px;           /* Set height of mission section */
+    width: 100%;
+    background-image: url(./img/openart-image__w9Fs0Nb_1728667312378_raw.jpg);
+    background-size: cover;  /* Ensure the background image covers the section */
+    background-position: center;
+}
+
+/* Content styles */
+main #mission .content {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center;     /* Center content horizontally */
+    width: 80%;              /* Optional: set content width */
+    padding: 20px;           /* Add padding to the content */
+    background-color: rgba(120, 123, 131, 0.80); /* 75% transparent blanchedalmond */
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for effect */
+    border-radius: 5px;     /* Optional: Add some border-radius for styling */
+}
+
+main #mission .content h2{
+    line-height: 1.6;
+    font-size: 2.5rem;
+}
+
+main #mission .content h2,
+main #mission .content h4 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;  /* Center text horizontally */
+    margin: 0;           /* Remove any default margins */
+    padding: 10px 0;     /* Optional: add padding for spacing */
+}
+
+/* Portfolio Section Styles */
+main #portfolio {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    width: 100%;
+    background-color: rgb(125, 140, 228);
+    padding: 10% 0;
+}
+
+/* Content styles */
+main #portfolio .content {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center;     /* Center content horizontally */
+    width: 90%;
+    padding: 10px;
+}
+
+/* Styling the ul to allow for card-like flex layout */
+main #portfolio .content ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;          /* Allow items to wrap if needed */
+    justify-content: space-around; /* Space cards evenly */
+    width: 100%;
+    list-style-type: none;     /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling each li as a card */
+main #portfolio .content ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;            /* Space between cards */
+    flex: 1 1 calc(33.333% - 20px); /* Responsive width: 3 cards per row, adjust for margin */
+    min-width: 250px;        /* Minimum width for cards */
+    text-align: center;
+    background-color: rgba(215, 215, 236, 0.8); /* Slightly transparent background */
+    border-radius: 5px;
+}
+
+
+
+main #portfolio .content img {
+    width: 200px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+main #portfolio .content h2 {
+    line-height: 1.6;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+main #portfolio .content h4 {
+    line-height: 1.6;
+    font-size: 1.325rem;
+}
+
+main #portfolio .content p {
+    line-height: 1.6;
+}
+
+/* Team Section Styles */
+main #team {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    width: 100%;
+    background-color: rgb(242, 243, 252);
+    padding: 10% 0;
+}
+
+/* Content styles */
+main #team .content {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center;     /* Center content horizontally */
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Styling the ul to allow for card-like flex layout */
+main #team .content ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;          /* Allow items to wrap if needed */
+    justify-content: space-around; /* Space cards evenly */
+    width: 100%;
+    list-style-type: none;     /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling each li as a card */
+main #team .content ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:  20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px); /* Responsive width: 3 cards per row, adjust for margin */
+    min-width: 250px;
+    text-align: center;
+    background-color: rgba(215, 215, 236, 0.8); /* Slightly transparent background */
+    border-radius: 5px;
+}
+
+main #team .content img {
+    width: 200px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+main #team .content h2 {
+    line-height: 1.6;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+main #team .content h4 {
+    line-height: 1.6;
+    font-size: 1.325rem;
+}
+
+main #team .content p {
+    line-height: 1.6;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    main #team .content ul li {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    main #team .content ul li {
+        flex: 1 1 100%; /* 1 card per row */
+    }
+}
+
+/* Footer styles */
+footer {
+    display: flex;                            /* Use flexbox for layout */
+    justify-content: space-between;           /* Space out child elements */
+    align-items: center;                      /* Center items vertically */
+    padding: 20px;                           /* Add some padding for spacing */
+    background-color: #333;                   /* Dark background for contrast */
+    color: #fff;                              /* Light text color for readability */
+    flex-wrap: wrap;                          /* Allow items to wrap on smaller screens */
+}
+
+.contacts {
+    flex: 1;                                   /* Allow contacts to take available space */
+    text-align: left;                         /* Align text to the left */
+}
+
+.copyright {
+    text-align: right;                        /* Align copyright text to the right */
+}
+
+/* Optional: Adjust font size and spacing */
+footer p {
+    margin: 0;                                /* Remove default margins */
+    font-size: 14px;                          /* Adjust font size as needed */
+}
