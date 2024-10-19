@@ -92,7 +92,10 @@ main {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+/* Target devices with viewport widths of 412px and smaller, ensuring we catch high-resolution devices like the Samsung Galaxy Note20 Ultra */
+@media (max-width: 412px),
+       (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 3.5),
+       (max-device-width: 1440px) and (min-resolution: 496dpi) {
     .hamburger {
       display: block; /* Show hamburger button on smaller screens */
     }
@@ -312,7 +315,10 @@ main #team .content p {
     }
 }
 
-@media (max-width: 480px) {
+/* Target devices with viewport widths of 412px and smaller, ensuring we catch high-resolution devices like the Samsung Galaxy Note20 Ultra */
+@media (max-width: 412px),
+       (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 3.5),
+       (max-device-width: 1440px) and (min-resolution: 496dpi) {
     main #team .content ul li {
         flex: 1 1 100%; /* 1 card per row */
     }
