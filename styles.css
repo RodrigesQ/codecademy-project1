@@ -93,7 +93,7 @@ main {
 
 /* Responsive Styles */
 /* Target devices with viewport widths of 412px and smaller, ensuring we catch high-resolution devices like the Samsung Galaxy Note20 Ultra */
-@media (max-width: 412px),
+@media only screen and (max-width: 412px),
        (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 3.5),
        (max-device-width: 1440px) and (min-resolution: 496dpi) {
     .hamburger {
@@ -309,14 +309,14 @@ main #team .content p {
 }
 
 /* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     main #team .content ul li {
         flex: 1 1 calc(50% - 20px); /* 2 cards per row */
     }
 }
 
 /* Target devices with viewport widths of 412px and smaller, ensuring we catch high-resolution devices like the Samsung Galaxy Note20 Ultra */
-@media (max-width: 412px),
+@media only screen and (max-width: 412px),
        (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 3.5),
        (max-device-width: 1440px) and (min-resolution: 496dpi) {
     main #team .content ul li {
